@@ -249,43 +249,36 @@ function getBrowserLanguage() {
   } else if (lang.startsWith('ar')) {
     return 'ar';
   } else {
-    return 'en';  // 默认英语
+    return 'en';
   }
 }
 
 function switchLanguage(lang) {
-  // 隐藏所有语言内容
+  // 移除所有语言内容的 active 类
   document.querySelectorAll('.lang-content').forEach(el => {
     el.classList.remove('active');
   });
   
-  // 显示选中的语言内容
-  document.getElementById(lang + '-content').classList.add('active');
-  
-  // 更新按钮状态
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.remove('active');
+  // 移除所有语言按钮的 active 类
+  document.querySelectorAll('.lang-btn').forEach(el => {
+    el.classList.remove('active');
   });
-  const activeBtn = document.querySelector(`.lang-btn[onclick="switchLanguage('${lang}')"]`);
-  if (activeBtn) {
-    activeBtn.classList.add('active');
-  }
-
-  // 保存语言选择
-  localStorage.setItem('preferred-language', lang);
   
-  // 如果是阿拉伯语，设置整个页面为 RTL
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  // 激活选中的语言内容和按钮
+  document.getElementById(`${lang}-content`).classList.add('active');
+  document.querySelector(`.lang-btn[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+  
+  // 设置 HTML 的 lang 属性
+  document.documentElement.lang = lang;
+  
+  // 存储语言选择
+  localStorage.setItem('preferredLanguage', lang);
 }
 
-// 页面加载时设置语言
-document.addEventListener('DOMContentLoaded', function() {
-  // 优先使用用户之前的选择
-  const savedLang = localStorage.getItem('preferred-language');
-  
-  // 如果没有保存的语言偏好，使用浏览器语言
-  const initialLang = savedLang || getBrowserLanguage();
-  
+// 页面加载时，根据存储的语言或浏览器语言初始化
+document.addEventListener('DOMContentLoaded', () => {
+  const storedLang = localStorage.getItem('preferredLanguage');
+  const initialLang = storedLang || getBrowserLanguage();
   switchLanguage(initialLang);
 });
 </script>
