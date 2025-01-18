@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {% for page in site.pages %}
+  {% if page.layout != nil and page.layout != 'feed' %}
+  <url>
+    <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
+    {% if page.date %}
+    <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+    {% else %}
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    {% endif %}
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    {% for lang in site.languages %}
+    <xhtml:link 
+      rel="alternate"
+      hreflang="{{ lang }}"
+      href="{{ site.url }}{{ page.url | remove: 'index.html' }}?lang={{ lang }}"
+    />
+    {% endfor %}
+  </url>
+  {% endif %}
+  {% endfor %}
+
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    {% for lang in site.languages %}
+    <xhtml:link 
+      rel="alternate"
+      hreflang="{{ lang }}"
+      href="{{ site.url }}{{ post.url }}?lang={{ lang }}"
+    />
+    {% endfor %}
+  </url>
+  {% endfor %}
+</urlset> 

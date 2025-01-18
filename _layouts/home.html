@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <div class="posts-section">
+      <h2 class="posts-heading">
+        <span class="heading-text-ar">المقالات</span>
+        <span class="heading-text-zh">博客文章</span>
+        <span class="heading-text-en">Blog Posts</span>
+      </h2>
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+        <li>
+          <span class="post-meta">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {{ post.date | date: date_format }}
+          </span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {%- endif -%}
+</div>
+
+<style>
+.posts-section {
+  margin-top: 4rem;
+}
+
+.posts-heading {
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.heading-text-ar,
+.heading-text-zh,
+.heading-text-en {
+  display: none;
+}
+
+html[lang="ar"] .heading-text-ar,
+html[lang="zh"] .heading-text-zh,
+html[lang="en"] .heading-text-en {
+  display: inline;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 2rem;
+}
+
+.post-meta {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.post-link {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}
+
+.post-link:hover {
+  color: #007AFF;
+}
+</style> 
