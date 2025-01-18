@@ -1,6 +1,6 @@
-# Hobe Translator 官方网站
+# Hobe 官方网站
 
-这是 Hobe Translator 的官方网站仓库。Hobe Translator 是一款专注于中阿互译的翻译工具，致力于为用户提供准确、流畅的翻译体验。
+这是 Hobe 的官方网站仓库。Hobe 是一款专注于中阿互译的翻译工具，致力于为用户提供准确、流畅的翻译体验。
 
 ## 技术栈
 
@@ -29,4 +29,4 @@ bundle exec jekyll serve
 
 ## 许可证
 
-© 2025 Hobe Translator。保留所有权利。
+© 2025 Hobe。保留所有权利。

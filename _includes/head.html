@@ -3,56 +3,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <!-- 多语言支持 -->
+  {%- if page.lang -%}
+    <meta property="og:locale" content="{{ page.lang }}" />
+  {%- endif -%}
+  {%- for lang in site.languages -%}
+    {%- if lang != page.lang -%}
+      <meta property="og:locale:alternate" content="{{ lang }}" />
+    {%- endif -%}
+  {%- endfor -%}
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}">
-  <link rel="manifest" href="{{ '/assets/icons/site.webmanifest' | relative_url }}">
+  <!-- 网站图标 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- PWA 支持 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Hobe">
+  <meta name="application-name" content="Hobe">
 
-  <!-- Base Styles -->
-  <style>
-    :root {
-      --primary-color: #ffe4dc;
-      --primary-light: #fff5f2;
-      --text-color: #333333;
-      --text-light: #666666;
-      --border-color: #dddddd;
-      --max-width: 1200px;
-      --header-height: 60px;
-    }
+  <!-- SEO 标签 -->
+  {%- seo -%}
 
-    body {
-      margin: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--text-color);
-      line-height: 1.6;
-    }
+  <!-- 自定义 meta 标签 -->
+  <meta name="keywords" content="Hobe,翻译,中文,阿拉伯语,互译,在线翻译,translation,chinese,arabic,translate online,هوبي,الترجمة,الصينية,العربية">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index, follow">
 
-    .wrapper {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 1rem;
-    }
-
-    .page-content {
-      min-height: calc(100vh - var(--header-height) - 100px);
-      padding: 2rem 0;
-    }
-
-    [dir="rtl"] {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    }
-  </style>
-
-  {%- if jekyll.environment == 'production' -%}
-    <!-- Production-only content (e.g., analytics) can go here -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  
+  <!-- Feed -->
+  {%- feed_meta -%}
+  
+  <!-- Google Analytics -->
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
   {%- endif -%}
 </head> 

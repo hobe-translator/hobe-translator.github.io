@@ -3,20 +3,54 @@
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that.
 
-title: Hobe Translator
+title: Hobe
+tagline: 专业的中阿互译工具 | Professional Chinese-Arabic Translation Tool | أداة احترافية للترجمة بين الصينية والعربية
 # email: # 暂时注释掉邮箱
-description: >- # this means to ignore newlines until "baseurl:"
-  Hobe Translator 是一款强大的翻译软件，支持多种语言之间的互译，
-  特别优化了阿拉伯语的翻译体验。它提供了简洁的界面和快速的翻译响应，
-  是您日常翻译工作的得力助手。
+
+# 多语言描述
+description:
+  zh: >-
+    Hobe 是一款专业的中阿互译工具，支持中文和阿拉伯语的双向翻译。
+    特别优化了阿拉伯语的翻译体验，支持 RTL 布局，提供语音输入和播放功能。
+    简洁的界面设计和快速的翻译响应，让您的翻译工作更加高效。
+  en: >-
+    Hobe is a professional translation tool specializing in Chinese-Arabic translation.
+    With optimized Arabic language support, RTL layout, voice input and playback features.
+    Clean interface design and fast translation response make your translation work more efficient.
+  ar: >-
+    هوبي هو أداة ترجمة احترافية متخصصة في الترجمة بين اللغتين الصينية والعربية.
+    يتميز بدعم محسّن للغة العربية، وتخطيط RTL، وميزات الإدخال الصوتي والتشغيل.
+    تصميم واجهة نظيف واستجابة ترجمة سريعة تجعل عملك في الترجمة أكثر كفاءة.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.hobe.chat" # the base hostname & protocol for your site
 github_username: hobe-translator
+author: Hobe Team
+
+# SEO 相关设置
+twitter:
+  username: hobe_chat
+  card: summary_large_image
+logo: /assets/images/Hobe.png
+social:
+  name: Hobe
+  links:
+    - https://github.com/hobe-translator
+    - https://twitter.com/hobe_chat
+
+# 多语言设置
+languages:
+  - zh
+  - ar
+  - en
+default_lang: zh
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 exclude:
@@ -38,3 +72,6 @@ exclude:
 # 添加自定义设置
 lang: zh # 设置网站默认语言为中文
 timezone: Asia/Shanghai # 设置时区
+
+# Google Analytics 设置（需要时再添加）
+# google_analytics: UA-XXXXXXXX-X
