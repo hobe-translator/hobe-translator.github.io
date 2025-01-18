@@ -7,16 +7,6 @@
         <p class="disclaimer">专注于中阿互译的翻译工具，致力于为用户提供准确、流畅的翻译体验。</p>
         <p class="disclaimer ar">أداة ترجمة متخصصة في الترجمة بين الصينية والعربية، ملتزمة بتقديم تجربة ترجمة دقيقة وسلسة للمستخدمين.</p>
       </div>
-      <div class="footer-col">
-        <div class="social-links">
-          <a href="mailto:{{ site.email }}" class="social-link">
-            <svg class="email-icon" viewBox="0 0 24 24" width="16" height="16">
-              <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-            {{ site.email }}
-          </a>
-        </div>
-      </div>
     </div>
   </div>
 </footer>
@@ -30,15 +20,13 @@
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-col {
-  flex: 1;
-  min-width: 250px;
+  max-width: 600px;
 }
 
 .copyright {
@@ -61,60 +49,13 @@
 
 .disclaimer.ar {
   direction: rtl;
-  text-align: right;
+  text-align: center;
   margin-top: 0.25rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-.social-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--text-light);
-  text-decoration: none;
-  padding: 0.5rem;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-}
-
-.social-link:hover {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-}
-
-[dir="rtl"] {
-  .social-links {
-    justify-content: flex-start;
-  }
-  
-  .social-link {
-    flex-direction: row-reverse;
-  }
-  
-  .disclaimer.ar {
-    direction: rtl;
-    text-align: right;
-  }
 }
 
 @media (max-width: 768px) {
   .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .social-links {
-    justify-content: center;
-  }
-  
-  .disclaimer.ar {
-    text-align: center;
+    padding: 0 1rem;
   }
 }
 </style> 
