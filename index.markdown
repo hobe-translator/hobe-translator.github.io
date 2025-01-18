@@ -239,6 +239,20 @@ layout: home
 </style>
 
 <script>
+function getBrowserLanguage() {
+  // 获取浏览器语言
+  const lang = navigator.language || navigator.userLanguage;
+  
+  // 简单的语言映射
+  if (lang.startsWith('zh')) {
+    return 'zh';
+  } else if (lang.startsWith('ar')) {
+    return 'ar';
+  } else {
+    return 'en';  // 默认英语
+  }
+}
+
 function switchLanguage(lang) {
   // 隐藏所有语言内容
   document.querySelectorAll('.lang-content').forEach(el => {
@@ -259,11 +273,19 @@ function switchLanguage(lang) {
 
   // 保存语言选择
   localStorage.setItem('preferred-language', lang);
+  
+  // 如果是阿拉伯语，设置整个页面为 RTL
+  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
 }
 
-// 页面加载时设置默认语言
+// 页面加载时设置语言
 document.addEventListener('DOMContentLoaded', function() {
-  const savedLang = localStorage.getItem('preferred-language') || 'zh';
-  switchLanguage(savedLang);
+  // 优先使用用户之前的选择
+  const savedLang = localStorage.getItem('preferred-language');
+  
+  // 如果没有保存的语言偏好，使用浏览器语言
+  const initialLang = savedLang || getBrowserLanguage();
+  
+  switchLanguage(initialLang);
 });
 </script>

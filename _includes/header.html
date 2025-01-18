@@ -1,0 +1,42 @@
+<header class="site-header">
+  <div class="wrapper">
+    <div class="header-content">
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        <span>Hobe</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid var(--border-color);
+  height: var(--header-height);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.25rem;
+  }
+}
+</style> 
