@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Hobe
 ---
 
 <div class="language-switcher">
@@ -131,9 +132,19 @@ layout: home
 </div>
 
 <style>
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 .language-switcher {
   text-align: center;
   margin: 1rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
 }
 
 .lang-btn {

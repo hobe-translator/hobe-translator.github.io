@@ -3,9 +3,14 @@
     <div class="footer-content">
       <div class="footer-col">
         <p class="copyright">© {{ 'now' | date: "%Y" }} Hobe</p>
-        <p class="slogan">让中阿交流更简单 | جعل التواصل بين الصينية والعربية أسهل</p>
-        <p class="disclaimer">专注于中阿互译的翻译工具，致力于为用户提供准确、流畅的翻译体验。</p>
-        <p class="disclaimer ar">أداة ترجمة متخصصة في الترجمة بين الصينية والعربية، ملتزمة بتقديم تجربة ترجمة دقيقة وسلسة للمستخدمين.</p>
+        <div class="slogan-container">
+          <p class="slogan zh">让中阿交流更简单</p>
+          <p class="slogan ar">جعل التواصل بين الصينية والعربية أسهل</p>
+        </div>
+        <div class="disclaimer-container">
+          <p class="disclaimer zh">专注于中阿互译的翻译工具，致力于为用户提供准确、流畅的翻译体验。</p>
+          <p class="disclaimer ar">أداة ترجمة متخصصة في الترجمة بين الصينية والعربية، ملتزمة بتقديم تجربة ترجمة دقيقة وسلسة للمستخدمين.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -26,7 +31,8 @@
 }
 
 .footer-col {
-  max-width: 600px;
+  max-width: 800px;
+  width: 100%;
 }
 
 .copyright {
@@ -35,27 +41,54 @@
   font-weight: 500;
 }
 
-.slogan {
+.slogan-container, .disclaimer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   margin: 0.5rem 0;
+}
+
+.slogan {
+  margin: 0;
   color: var(--text-color);
   font-size: 1rem;
+  flex: 1;
+  min-width: 200px;
 }
 
 .disclaimer {
-  margin: 0.5rem 0 0 0;
+  margin: 0;
   color: var(--text-light);
   font-size: 0.9rem;
+  flex: 1;
+  min-width: 200px;
 }
 
-.disclaimer.ar {
+.ar {
   direction: rtl;
   text-align: center;
-  margin-top: 0.25rem;
+}
+
+.zh {
+  direction: ltr;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .footer-content {
     padding: 0 1rem;
+  }
+  
+  .slogan-container, .disclaimer-container {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .slogan, .disclaimer {
+    min-width: unset;
+    width: 100%;
   }
 }
 </style> 

@@ -1,0 +1,14 @@
+:root {
+  --primary-light: #fff5f2;
+  --text-color: #333;
+  --text-light: #666;
+  --border-color: #eee;
+  --header-height: 60px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+} 
