@@ -72,6 +72,3 @@ exclude:
 # 添加自定义设置
 lang: zh # 设置网站默认语言为中文
 timezone: Asia/Shanghai # 设置时区
-
-# Google Analytics 设置（需要时再添加）
-# google_analytics: UA-XXXXXXXX-X
