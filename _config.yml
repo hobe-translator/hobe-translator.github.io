@@ -4,21 +4,20 @@
 # which you are expected to set up once and rarely edit after that.
 
 title: Hobe
-tagline: 专业的中阿互译工具 | Professional Chinese-Arabic Translation Tool | أداة احترافية للترجمة بين الصينية والعربية
 # email: # 暂时注释掉邮箱
 
 # 多语言描述
 description:
   zh: >-
-    Hobe 是一款专业的中阿互译工具，支持中文和阿拉伯语的双向翻译。
+    专业的中阿互译工具。Hobe 支持中文和阿拉伯语的双向翻译。
     特别优化了阿拉伯语的翻译体验，支持 RTL 布局，提供语音输入和播放功能。
     简洁的界面设计和快速的翻译响应，让您的翻译工作更加高效。
   en: >-
-    Hobe is a professional translation tool specializing in Chinese-Arabic translation.
+    Professional Chinese-Arabic Translation Tool. Hobe specializes in Chinese-Arabic translation.
     With optimized Arabic language support, RTL layout, voice input and playback features.
     Clean interface design and fast translation response make your translation work more efficient.
   ar: >-
-    هوبي هو أداة ترجمة احترافية متخصصة في الترجمة بين اللغتين الصينية والعربية.
+    أداة احترافية للترجمة بين الصينية والعربية. هوبي متخصص في الترجمة بين اللغتين الصينية والعربية.
     يتميز بدعم محسّن للغة العربية، وتخطيط RTL، وميزات الإدخال الصوتي والتشغيل.
     تصميم واجهة نظيف واستجابة ترجمة سريعة تجعل عملك في الترجمة أكثر كفاءة.
 
