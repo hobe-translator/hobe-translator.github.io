@@ -46,8 +46,16 @@ title: Hobe
 
       <div class="try-section">
         <h2>Try Now</h2>
-        <p>Scan QR code to get test Token</p>
-        <img src="/assets/images/qrcode.png" alt="Test Token QR Code" class="qr-code">
+        <div class="token-options">
+          <div class="button-option">
+            <p class="option-title">Option 1: Open in Browser</p>
+            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">Open Hobe →</a>
+          </div>
+          <div class="qr-option">
+            <p class="option-title">Option 2: Scan QR Code</p>
+            <img src="/assets/images/qrcode.png" alt="Test Token QR Code" class="qr-code">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -85,8 +93,16 @@ title: Hobe
 
       <div class="try-section">
         <h2>جرب الآن</h2>
-        <p>امسح رمز QR للحصول على رمز الاختبار</p>
-        <img src="/assets/images/qrcode.png" alt="رمز QR للاختبار" class="qr-code">
+        <div class="token-options">
+          <div class="button-option">
+            <p class="option-title">الخيار الأول: فتح في المتصفح</p>
+            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">فتح هوبي ←</a>
+          </div>
+          <div class="qr-option">
+            <p class="option-title">الخيار الثاني: مسح رمز QR</p>
+            <img src="/assets/images/qrcode.png" alt="رمز QR للاختبار" class="qr-code">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -124,8 +140,16 @@ title: Hobe
 
       <div class="try-section">
         <h2>立即体验</h2>
-        <p>扫描下方二维码获取测试 Token</p>
-        <img src="/assets/images/qrcode.png" alt="测试 Token 二维码" class="qr-code">
+        <div class="token-options">
+          <div class="button-option">
+            <p class="option-title">方式一：浏览器打开</p>
+            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">打开 Hobe →</a>
+          </div>
+          <div class="qr-option">
+            <p class="option-title">方式二：扫描二维码</p>
+            <img src="/assets/images/qrcode.png" alt="测试 Token 二维码" class="qr-code">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -232,9 +256,52 @@ title: Hobe
   margin: 4rem 0;
 }
 
+.token-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qr-option,
+.button-option {
+  text-align: center;
+  width: 200px;
+}
+
+.option-title {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
 .qr-code {
   width: 200px;
-  margin: 2rem 0;
+  margin: 0;
+}
+
+.get-token-btn {
+  display: inline-block;
+  width: 200px;
+  padding: 1rem 0;
+  background: var(--primary-color, #007AFF);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  font-size: 1.2rem;
+}
+
+.get-token-btn:hover {
+  background: var(--primary-color-dark, #0056b3);
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -245,6 +312,22 @@ title: Hobe
   
   .screenshot {
     max-width: 100%;
+  }
+
+  .token-options {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  
+  .qr-option,
+  .button-option {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .get-token-btn {
+    width: 100%;
+    max-width: 300px;
   }
 }
 </style>
