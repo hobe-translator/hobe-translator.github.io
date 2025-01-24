@@ -174,20 +174,42 @@ title: Hobe
 .lang-btn {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 20px;
-  background: white;
+  background: var(--background-color);
+  color: var(--text-color);
   cursor: pointer;
   transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .lang-btn:hover {
-  background: #fff5f2;
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
 }
 
 .lang-btn.active {
-  background: #ffe4dc;
-  border-color: #ffcdb9;
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .lang-btn {
+    background: var(--primary-light);
+    border-color: var(--primary-color);
+  }
+  
+  .lang-btn:hover {
+    background: var(--primary-color);
+    color: white;
+  }
+  
+  .lang-btn.active {
+    background: var(--primary-color);
+    color: white;
+  }
 }
 
 .lang-content {
