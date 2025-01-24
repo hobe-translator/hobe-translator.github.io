@@ -315,7 +315,7 @@ title: Hobe
   }
 
   .token-options {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 2rem;
   }
   
