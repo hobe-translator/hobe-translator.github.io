@@ -44,10 +44,24 @@ title: Hobe
           <li>🌐 Bidirectional translation between Chinese and Arabic</li>
           <li>🎯 Translation engine optimized for Arabic</li>
           <li>🎨 Full RTL (Right-to-Left) interface support</li>
-          <li>🎤 Voice input and playback support</li>
-          <li>✨ Smart translation optimization</li>
+          <li>🎤 Accurate voice recognition with support for audio file upload</li>
+          <li>✨ Smart text refinement: intelligently polishes your input, whether from voice or typing</li>
           <li>📸 Generate bilingual translation images for easy sharing</li>
         </ul>
+      </div>
+
+      <div class="feature-section">
+        <h2>Featured Use Cases</h2>
+        <div class="use-cases">
+          <div class="use-case">
+            <h3>Voice to Polished Text</h3>
+            <p>Record your thoughts or upload audio files, and get professionally formatted text. Perfect for taking voice notes or creating documents hands-free.</p>
+          </div>
+          <div class="use-case">
+            <h3>Text Enhancement</h3>
+            <p>Input any casual text, and let our smart optimization transform it into clear, professional writing - fixing errors and improving readability, even without translation.</p>
+          </div>
+        </div>
       </div>
 
       <div class="feature-section">
@@ -98,10 +112,24 @@ title: Hobe
           <li>🌐 ترجمة ثنائية الاتجاه بين الصينية والعربية</li>
           <li>🎯 محرك ترجمة مُحسّن للغة العربية</li>
           <li>🎨 دعم كامل لواجهة RTL</li>
-          <li>🎤 دعم الإدخال الصوتي والتشغيل</li>
-          <li>✨ تحسين الترجمة الذكية</li>
+          <li>🎤 التعرف الدقيق على الصوت مع دعم تحميل الملفات الصوتية</li>
+          <li>✨ تحسين النص الذكي: يصقل مدخلاتك بذكاء، سواء كانت صوتية أو مكتوبة</li>
           <li>📸 إنشاء صور ترجمة ثنائية اللغة للمشاركة بسهولة</li>
         </ul>
+      </div>
+
+      <div class="feature-section">
+        <h2>حالات الاستخدام المميزة</h2>
+        <div class="use-cases">
+          <div class="use-case">
+            <h3>تحويل الصوت إلى نص منقح</h3>
+            <p>سجل أفكارك أو قم بتحميل الملفات الصوتية، واحصل على نص منسق احترافياً. مثالي لتدوين الملاحظات الصوتية أو إنشاء المستندات بدون استخدام اليدين.</p>
+          </div>
+          <div class="use-case">
+            <h3>تحسين النص</h3>
+            <p>أدخل أي نص عادي، ودع التحسين الذكي يحوله إلى كتابة واضحة واحترافية - يصحح الأخطاء ويحسن القراءة، حتى بدون الترجمة.</p>
+          </div>
+        </div>
       </div>
 
       <div class="feature-section">
@@ -152,10 +180,24 @@ title: Hobe
           <li>🌐 支持中文与阿拉伯语的双向翻译</li>
           <li>🎯 针对阿拉伯语优化的翻译引擎</li>
           <li>🎨 完整支持阿拉伯语从右到左（RTL）的界面布局</li>
-          <li>🎤 支持语音输入和语音播放</li>
-          <li>✨ 智能优化翻译结果</li>
+          <li>🎤 精准的语音识别，支持音频文件上传</li>
+          <li>✨ 智能文本优化：自动优化您的输入内容，无论是语音输入还是手动输入</li>
           <li>📸 生成双语对照翻译图片，方便分享</li>
         </ul>
+      </div>
+
+      <div class="feature-section">
+        <h2>特色用例</h2>
+        <div class="use-cases">
+          <div class="use-case">
+            <h3>语音转优质文本</h3>
+            <p>录制想法或上传音频文件，即可获得专业格式的文本。完美适用于语音笔记或免手动创建文档。</p>
+          </div>
+          <div class="use-case">
+            <h3>文本增强</h3>
+            <p>输入任何随意文本，让智能优化将其转换为清晰、专业的写作内容 —— 纠正错误并提升可读性，无需使用翻译功能。</p>
+          </div>
+        </div>
       </div>
 
       <div class="feature-section">
@@ -395,6 +437,44 @@ title: Hobe
   .get-token-btn {
     width: 100%;
     max-width: 300px;
+  }
+}
+
+.use-cases {
+  margin: 2rem 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.use-case {
+  padding: 1.5rem;
+  background: var(--primary-light);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.use-case:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.use-case h3 {
+  margin: 0 0 1rem 0;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.use-case p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .use-cases {
+    grid-template-columns: 1fr;
   }
 }
 </style>
