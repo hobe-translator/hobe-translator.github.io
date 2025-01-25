@@ -314,30 +314,37 @@ title: Hobe
 
 .screenshots {
   display: flex;
-  gap: 2rem;
-  justify-content: center;
-  margin: 2rem 0;
   flex-wrap: wrap;
-}
-
-.screenshot-wrapper {
-  position: relative;
-  margin: 1rem;
-  transition: transform 0.3s ease;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .screenshot {
-  max-width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 3px solid var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
   transition: all 0.3s ease;
+}
+
+.screenshot:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.screenshot-wrapper {
+  margin: 1rem;
+  text-align: center;
+  flex: 1;
 }
 
 .screenshot-label {
   display: block;
-  text-align: center;
   margin-top: 0.5rem;
-  color: var(--text-light);
+  color: var(--text-color);
   font-size: 0.9rem;
 }
 
