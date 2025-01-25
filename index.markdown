@@ -354,18 +354,21 @@ title: Hobe
   display: inline-block;
   width: 200px;
   padding: 1rem 0;
-  background: var(--primary-color, #007AFF);
+  background: var(--primary-color);
   color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 500;
-  transition: background-color 0.2s;
+  transition: all 0.3s ease;
   font-size: 1.2rem;
 }
 
 .get-token-btn:hover {
-  background: var(--primary-color-dark, #0056b3);
+  background: var(--primary-color-dark);
+  color: white;
   text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 768px) {
