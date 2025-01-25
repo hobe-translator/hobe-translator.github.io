@@ -24,12 +24,17 @@ title: Hobe
     </div>
 
     <div class="features">
-      <div class="feature-section">
-        <h2>Elegant Translation Experience</h2>
-        <p>Clean interface design with fast translation response makes your translation work easier.</p>
-        <div class="screenshots">
-          <img src="/assets/images/screen-shot-ar.jpg" alt="Arabic Interface" class="screenshot">
-          <img src="/assets/images/screen-shot-en.jpg" alt="English Interface" class="screenshot">
+      <div class="try-section">
+        <h2>Try Now</h2>
+        <div class="token-options">
+          <div class="button-option">
+            <p class="option-title">Option 1: Open in Browser</p>
+            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">Open Hobe →</a>
+          </div>
+          <div class="qr-option">
+            <p class="option-title">Option 2: Scan QR Code</p>
+            <img src="/assets/images/qrcode.png" alt="Test Token QR Code" class="qr-code">
+          </div>
         </div>
       </div>
 
@@ -41,19 +46,21 @@ title: Hobe
           <li>🎨 Full RTL (Right-to-Left) interface support</li>
           <li>🎤 Voice input and playback support</li>
           <li>✨ Smart translation optimization</li>
+          <li>📸 Generate bilingual translation images for easy sharing</li>
         </ul>
       </div>
 
-      <div class="try-section">
-        <h2>Try Now</h2>
-        <div class="token-options">
-          <div class="button-option">
-            <p class="option-title">Option 1: Open in Browser</p>
-            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">Open Hobe →</a>
+      <div class="feature-section">
+        <h2>Interface Preview</h2>
+        <p class="preview-description">Screenshots of Hobe's clean and intuitive interface:</p>
+        <div class="screenshots">
+          <div class="screenshot-wrapper">
+            <img src="/assets/images/screen-shot-ar.jpg" alt="Arabic Interface" class="screenshot">
+            <span class="screenshot-label">Arabic Interface</span>
           </div>
-          <div class="qr-option">
-            <p class="option-title">Option 2: Scan QR Code</p>
-            <img src="/assets/images/qrcode.png" alt="Test Token QR Code" class="qr-code">
+          <div class="screenshot-wrapper">
+            <img src="/assets/images/screen-shot-en.jpg" alt="English Interface" class="screenshot">
+            <span class="screenshot-label">English Interface</span>
           </div>
         </div>
       </div>
@@ -71,12 +78,17 @@ title: Hobe
     </div>
 
     <div class="features">
-      <div class="feature-section">
-        <h2>تجربة ترجمة أنيقة</h2>
-        <p>تصميم واجهة نظيف مع استجابة ترجمة سريعة يجعل عملك في الترجمة أسهل.</p>
-        <div class="screenshots">
-          <img src="/assets/images/screen-shot-ar.jpg" alt="واجهة عربية" class="screenshot">
-          <img src="/assets/images/screen-shot-en.jpg" alt="واجهة إنجليزية" class="screenshot">
+      <div class="try-section">
+        <h2>جرب الآن</h2>
+        <div class="token-options">
+          <div class="button-option">
+            <p class="option-title">الخيار الأول: فتح في المتصفح</p>
+            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">فتح هوبي ←</a>
+          </div>
+          <div class="qr-option">
+            <p class="option-title">الخيار الثاني: مسح رمز QR</p>
+            <img src="/assets/images/qrcode.png" alt="رمز QR للاختبار" class="qr-code">
+          </div>
         </div>
       </div>
 
@@ -88,19 +100,21 @@ title: Hobe
           <li>🎨 دعم كامل لواجهة RTL</li>
           <li>🎤 دعم الإدخال الصوتي والتشغيل</li>
           <li>✨ تحسين الترجمة الذكية</li>
+          <li>📸 إنشاء صور ترجمة ثنائية اللغة للمشاركة بسهولة</li>
         </ul>
       </div>
 
-      <div class="try-section">
-        <h2>جرب الآن</h2>
-        <div class="token-options">
-          <div class="button-option">
-            <p class="option-title">الخيار الأول: فتح في المتصفح</p>
-            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">فتح هوبي ←</a>
+      <div class="feature-section">
+        <h2>واجهة التطبيق</h2>
+        <p class="preview-description">صور تصميم واجهة هوبي النظيف والمبسط:</p>
+        <div class="screenshots">
+          <div class="screenshot-wrapper">
+            <img src="/assets/images/screen-shot-ar.jpg" alt="واجهة عربية" class="screenshot">
+            <span class="screenshot-label">واجهة عربية</span>
           </div>
-          <div class="qr-option">
-            <p class="option-title">الخيار الثاني: مسح رمز QR</p>
-            <img src="/assets/images/qrcode.png" alt="رمز QR للاختبار" class="qr-code">
+          <div class="screenshot-wrapper">
+            <img src="/assets/images/screen-shot-en.jpg" alt="واجهة إنجليزية" class="screenshot">
+            <span class="screenshot-label">واجهة إنجليزية</span>
           </div>
         </div>
       </div>
@@ -118,12 +132,17 @@ title: Hobe
     </div>
 
     <div class="features">
-      <div class="feature-section">
-        <h2>优雅的翻译体验</h2>
-        <p>简洁的界面设计，快速的翻译响应，让您的翻译工作更加轻松。</p>
-        <div class="screenshots">
-          <img src="/assets/images/screen-shot-ar.jpg" alt="阿拉伯语界面" class="screenshot">
-          <img src="/assets/images/screen-shot-en.jpg" alt="英语界面" class="screenshot">
+      <div class="try-section">
+        <h2>立即体验</h2>
+        <div class="token-options">
+          <div class="button-option">
+            <p class="option-title">方式一：浏览器打开</p>
+            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">打开 Hobe →</a>
+          </div>
+          <div class="qr-option">
+            <p class="option-title">方式二：扫描二维码</p>
+            <img src="/assets/images/qrcode.png" alt="测试 Token 二维码" class="qr-code">
+          </div>
         </div>
       </div>
 
@@ -135,19 +154,21 @@ title: Hobe
           <li>🎨 完整支持阿拉伯语从右到左（RTL）的界面布局</li>
           <li>🎤 支持语音输入和语音播放</li>
           <li>✨ 智能优化翻译结果</li>
+          <li>📸 生成双语对照翻译图片，方便分享</li>
         </ul>
       </div>
 
-      <div class="try-section">
-        <h2>立即体验</h2>
-        <div class="token-options">
-          <div class="button-option">
-            <p class="option-title">方式一：浏览器打开</p>
-            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">打开 Hobe →</a>
+      <div class="feature-section">
+        <h2>界面预览</h2>
+        <p class="preview-description">Hobe 简洁直观界面的截图：</p>
+        <div class="screenshots">
+          <div class="screenshot-wrapper">
+            <img src="/assets/images/screen-shot-ar.jpg" alt="阿拉伯语界面" class="screenshot">
+            <span class="screenshot-label">阿拉伯语界面</span>
           </div>
-          <div class="qr-option">
-            <p class="option-title">方式二：扫描二维码</p>
-            <img src="/assets/images/qrcode.png" alt="测试 Token 二维码" class="qr-code">
+          <div class="screenshot-wrapper">
+            <img src="/assets/images/screen-shot-en.jpg" alt="英语界面" class="screenshot">
+            <span class="screenshot-label">英语界面</span>
           </div>
         </div>
       </div>
@@ -257,10 +278,31 @@ title: Hobe
   flex-wrap: wrap;
 }
 
+.screenshot-wrapper {
+  position: relative;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
 .screenshot {
   max-width: 300px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.screenshot-label {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.preview-description {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 2rem;
 }
 
 .feature-section ul {
