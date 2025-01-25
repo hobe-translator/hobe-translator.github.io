@@ -72,6 +72,13 @@ layout: default
   margin-bottom: 1.5rem;
 }
 
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .post-title {
     font-size: 1.75rem;
@@ -80,6 +87,12 @@ layout: default
   .post-content {
     font-size: 1rem;
     line-height: 1.6;
+  }
+
+  .post-content img {
+    width: 75%;
+    display: block;
+    margin: 1.5rem auto;
   }
 }
 
