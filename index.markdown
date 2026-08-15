@@ -29,7 +29,7 @@ title: Hobe
         <div class="token-options">
           <div class="button-option">
             <p class="option-title">Option 1: Open in Browser</p>
-            <a href="https://go.hobe.chat/static/get-token.html" class="get-token-btn">Open Hobe →</a>
+            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">Open Hobe →</a>
           </div>
           <div class="qr-option">
             <p class="option-title">Option 2: Scan QR Code</p>
@@ -97,7 +97,7 @@ title: Hobe
         <div class="token-options">
           <div class="button-option">
             <p class="option-title">الخيار الأول: فتح في المتصفح</p>
-            <a href="https://go.hobe.chat/static/get-token.html" class="get-token-btn">فتح هوبي ←</a>
+            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">فتح هوبي ←</a>
           </div>
           <div class="qr-option">
             <p class="option-title">الخيار الثاني: مسح رمز QR</p>
@@ -165,7 +165,7 @@ title: Hobe
         <div class="token-options">
           <div class="button-option">
             <p class="option-title">方式一：浏览器打开</p>
-            <a href="https://go.hobe.chat/static/get-token.html" class="get-token-btn">打开 Hobe →</a>
+            <a href="https://hobe.hobe.chat/static/get-token.html" class="get-token-btn">打开 Hobe →</a>
           </div>
           <div class="qr-option">
             <p class="option-title">方式二：扫描二维码</p>
