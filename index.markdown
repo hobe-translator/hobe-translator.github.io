@@ -38,6 +38,18 @@ title: Hobe
         </div>
       </div>
 
+      <div class="feature-section relay-section">
+        <h2>Hobe Relay</h2>
+        <p class="relay-tagline">Live voice interpreter between Chinese and Levantine Arabic — hold a button, speak, and a robot interpreter relays your words in the other language.</p>
+        <div class="token-options">
+          <div class="button-option">
+            <p class="option-title">Open in Browser</p>
+            <a href="https://relay.thiswind.work/get-token" class="get-token-btn relay-btn">Open Hobe Relay →</a>
+            <p class="relay-note">A rotating access key is issued on entry — no sign-up needed.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="feature-section">
         <h2>Key Features</h2>
         <ul>
@@ -106,6 +118,18 @@ title: Hobe
         </div>
       </div>
 
+      <div class="feature-section relay-section">
+        <h2>هوبي ريليه</h2>
+        <p class="relay-tagline">مُترجِم صوتي مباشر بين الصينية والعربية الشامية — اضغط بزر مستمر وتحدث، فينقل الروبوت كلامك إلى اللغة الأخرى بصوت طبيعي.</p>
+        <div class="token-options">
+          <div class="button-option">
+            <p class="option-title">فتح في المتصفح</p>
+            <a href="https://relay.thiswind.work/get-token" class="get-token-btn relay-btn">افتح هوبي ريليه ←</a>
+            <p class="relay-note">يتم إصدار مفتاح وصول متجدد عند الدخول — دون الحاجة للتسجيل.</p>
+          </div>
+        </div>
+      </div>
+
       <div class="feature-section">
         <h2>الميزات الرئيسية</h2>
         <ul>
@@ -170,6 +194,18 @@ title: Hobe
           <div class="qr-option">
             <p class="option-title">方式二：扫描二维码</p>
             <img src="/assets/images/qrcode.png" alt="测试 Token 二维码" class="qr-code">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-section relay-section">
+        <h2>Hobe Relay 实时口译</h2>
+        <p class="relay-tagline">中文 ⇆ 黎凡特阿拉伯语的实时语音口译机器人 —— 按住按键说话，机器人以第三人称把您的话转述成另一门语言。</p>
+        <div class="token-options">
+          <div class="button-option">
+            <p class="option-title">浏览器打开</p>
+            <a href="https://relay.thiswind.work/get-token" class="get-token-btn relay-btn">打开 Hobe Relay →</a>
+            <p class="relay-note">进入时自动发放可轮换的访问密钥，无需注册。</p>
           </div>
         </div>
       </div>
@@ -432,6 +468,44 @@ title: Hobe
 .get-token-btn-go:hover {
   background: var(--primary-color);
   color: white;
+}
+
+/* Hobe Relay card */
+.relay-section {
+  padding: 2rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0a0f15 0%, #0c1a16 100%);
+  color: #d7e6e0;
+  text-align: center;
+}
+
+.relay-section h2 {
+  color: #00ffc8;
+}
+
+.relay-tagline {
+  max-width: 560px;
+  margin: 0 auto 1rem;
+  color: #9fb8b0;
+  line-height: 1.7;
+}
+
+.relay-btn {
+  background: linear-gradient(180deg, #16211c, #0b110d);
+  border: 1px solid #23493d;
+  box-shadow: 0 4px 0 #050b08;
+}
+
+.relay-btn:hover {
+  background: #0f2f26;
+  transform: translateY(1px);
+  box-shadow: 0 3px 0 #050b08;
+}
+
+.relay-note {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #5d7a72;
 }
 
 @media (max-width: 768px) {
